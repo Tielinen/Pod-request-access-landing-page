@@ -1,0 +1,69 @@
+:root {
+  --margin-left: 2.4375rem;
+}
+body {
+  height: 100vh;
+  background: url(../assets/logo.svg) no-repeat var(--margin-left) 4rem,
+    url(../assets/bg-pattern-dots.svg) no-repeat bottom left var(--margin-left),
+    url(../assets/tablet-image-host.jpg) no-repeat top right,
+    var(--primary-dark);
+}
+
+.content-container {
+  padding-top: 5.8125rem;
+  margin: 16.125rem 5.875rem 0px var(--margin-left);
+
+  display: flex;
+  flex-direction: column;
+  background: var(--primary-dark);
+
+  text-align: left;
+}
+
+.content-container h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+#main-content {
+  min-height: 5.25rem;
+  margin: 1.9375rem 11.875rem 2.5rem 0;
+
+  font-size: 1.125rem;
+}
+
+.form-container {
+  height: 3.5rem;
+  margin-right: 13rem;
+  padding: 0 0.3125rem 0 1.875rem;
+  border-radius: 3.125rem;
+
+  display: flex;
+  align-items: center;
+
+  background-color: var(--primary-gray);
+}
+
+button,
+input {
+  height: 2.875rem;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  flex: 1 0 10.125rem;
+}
+
+.logo-container {
+  order: 1;
+  height: 1.8125rem;
+
+  margin-top: 2.3125rem;
+  margin-right: 6.25rem;
+}
+
+#error-message {
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}

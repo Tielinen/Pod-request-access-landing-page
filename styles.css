@@ -1,0 +1,225 @@
+/*
+- svg colors!
+*/
+
+:root {
+  --primary: rgb(83, 230, 175);
+  --primary-gray: rgb(44, 52, 75);
+  --primary-dark: rgb(18, 23, 37);
+  --primary-light: rgb(255, 255, 255);
+
+  --seconday-light: rgb(194, 203, 229);
+  --seconday-gray: rgb(90, 102, 138); /* color for svg files */
+
+  --error-red: rgb(251, 62, 62);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Chivo', sans-serif;
+  height: 100vh;
+  background: url(assets/logo.svg) no-repeat top 3.875rem center,
+    linear-gradient(rgba(18, 23, 37, 0.9), rgba(18, 23, 37, 0.9)),
+    url(assets/mobile-image-host.jpg) no-repeat top right / cover;
+}
+
+.content-container {
+  margin: 10.9375rem 1.5625rem 0 1.5625rem;
+  text-align: center;
+}
+
+.content-container h1 {
+  color: var(--primary);
+  font-size: 1.625rem;
+  line-height: 2.375rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h1 span {
+  color: var(--primary-light);
+  display: block;
+}
+
+#main-content {
+  margin-top: 16px;
+
+  font-size: 0.9375rem;
+  line-height: 1.55rem;
+  color: var(--seconday-light);
+  font-weight: 300;
+}
+
+.logo-container {
+  display: flex;
+
+  margin-top: 2.0625rem;
+  margin-bottom: 3rem;
+
+  height: 1rem;
+  justify-content: space-between;
+}
+
+input,
+button {
+  border: none;
+  display: block;
+  width: 100%;
+  border-radius: 1.75rem;
+
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+input {
+  padding: 0.875rem 12.5rem 0.875rem 2rem;
+  background-color: var(--primary-gray);
+
+  color: var(--primary-light);
+}
+
+button {
+  margin: 1rem 0;
+
+  padding: 0.875rem 0;
+  background-color: var(--primary);
+
+  color: var(--primary-dark);
+  text-align: center;
+}
+
+button:hover {
+  background-color: #b3ffe2;
+}
+
+#error-message {
+  margin-top: 1rem;
+  color: var(--error-red);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --margin-left: 2.4375rem;
+  }
+  body {
+    height: 100vh;
+    background: url(assets/logo.svg) no-repeat var(--margin-left) 4rem,
+      url(assets/bg-pattern-dots.svg) no-repeat bottom left var(--margin-left),
+      url(assets/tablet-image-host.jpg) no-repeat top right, var(--primary-dark);
+  }
+
+  .content-container {
+    padding-top: 5.8125rem;
+    margin: 16.125rem 5.875rem 0px var(--margin-left);
+
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-dark);
+
+    text-align: left;
+  }
+
+  .content-container h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  #main-content {
+    min-height: 5.25rem;
+    margin: 1.9375rem 11.875rem 2.5rem 0;
+
+    font-size: 1.125rem;
+  }
+
+  .form-container {
+    height: 3.5rem;
+    margin-right: 13rem;
+    padding: 0 0.3125rem 0 1.875rem;
+    border-radius: 3.125rem;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--primary-gray);
+  }
+
+  button,
+  input {
+    height: 2.875rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    flex: 1 0 10.125rem;
+  }
+
+  .logo-container {
+    order: 1;
+    height: 1.8125rem;
+
+    margin-top: 2.3125rem;
+    margin-right: 6.25rem;
+  }
+
+  #error-message {
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  :root {
+    --margin-left: 10.3125rem;
+    --margin-top: 8.125rem;
+  }
+
+  html {
+    margin: auto auto;
+    max-width: 90rem;
+    max-height: 56.25rem;
+  }
+
+  body {
+    background: url(assets/logo.svg) no-repeat var(--margin-left) 6.375rem,
+      url(assets/bg-pattern-dots.svg) no-repeat right bottom 5.3125rem,
+      url(assets/desktop-image-host.jpg) no-repeat right var(--margin-top),
+      var(--primary-dark);
+  }
+
+  .content-container {
+    margin: 16.3125rem 34.5rem var(--margin-top) var(--margin-left);
+    padding-top: 5.5rem;
+  }
+
+  .content-container h1 {
+    font-size: 3.25rem;
+    line-height: 3.875rem;
+  }
+
+  #main-content {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    min-width: 27.8125rem;
+
+    margin: 1.5rem 51.875rem 2.5rem 0;
+  }
+
+  input {
+    min-width: 7.5rem;
+  }
+
+  .logo-container {
+    margin: 2.8125rem 11.6875rem 0 0;
+    height: 1.8125rem;
+  }
+}
