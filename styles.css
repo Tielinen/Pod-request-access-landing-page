@@ -190,6 +190,7 @@ button:hover {
   html {
     max-width: 90rem;
     margin: auto auto;
+    max-height: 56.25rem;
   }
 
   body {
