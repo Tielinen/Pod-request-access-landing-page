@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot](screenshot.jpg)
 
 ### Links
 
 - Solution URL: (https://github.com/Tielinen/Pod-request-access-landing-page)
-- Live Site URL: [Add live site URL here](https://tielinen.github.io/Pod-request-access-landing-page/)
+- Live Site URL: (https://tielinen.github.io/Pod-request-access-landing-page/)
 
 ## My process
 
