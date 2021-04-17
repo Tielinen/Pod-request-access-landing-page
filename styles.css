@@ -81,7 +81,7 @@ button {
 }
 
 input {
-  padding: 0.875rem 12.5rem 0.875rem 2rem;
+  padding: 0.875rem 0 0.875rem 2rem;
   background-color: var(--primary-gray);
 
   color: var(--primary-light);
@@ -161,6 +161,10 @@ button:hover {
     height: 2.875rem;
     margin: 0;
     padding: 0;
+  }
+
+  input {
+    min-width: 14.375rem;
   }
 
   button {

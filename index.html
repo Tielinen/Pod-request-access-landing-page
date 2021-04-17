@@ -29,16 +29,29 @@
         more!
       </p>
       <div class="logo-container">
-        <img id="spotify-logo" src="assets/spotify.svg" alt="" />
-        <img id="apple-logo" src="assets/apple-podcast.svg" alt="" />
-        <img id="google-logo" src="assets/google-podcasts.svg" alt="" />
-        <img id="pocket-logo" src="assets/pocket-casts.svg" alt="" />
+        <img id="spotify-logo" src="assets/spotify.svg" alt="Spotify Logo" />
+        <img id="apple-logo" src="assets/apple-podcast.svg" alt="Apple logo" />
+        <img
+          id="google-logo"
+          src="assets/google-podcasts.svg"
+          alt="Google logo"
+        />
+        <img
+          id="pocket-logo"
+          src="assets/pocket-casts.svg"
+          alt="pocket-casts logo"
+        />
       </div>
-      <div class="form-container">
-        <input type="email" id="email" placeholder="Email address" name="" />
-        <button for="email">Request access</button>
-      </div>
-      <p id="error-message" class="hidden">Oops! Please add your email</p>
+      <form class="form-container">
+        <input
+          type="email"
+          id="email"
+          placeholder="Email address"
+          aria-label="email"
+        />
+        <button>Request access</button>
+        <p id="error-message" class="">Oops! Please add your email</p>
+      </form>
     </div>
     <script src="script.js"></script>
   </body>
