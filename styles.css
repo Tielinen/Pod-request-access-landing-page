@@ -96,6 +96,10 @@ input {
 
   color: var(--primary-light);
 }
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.125rem var(--primary);
+}
 
 .js-button {
   margin: 1rem 0;
@@ -134,17 +138,20 @@ input {
   }
 
   .content-container {
-    padding-top: 5.8125rem;
     min-width: 39.6875rem;
+    max-width: 50rem;
     height: 31.8125rem;
+
+    padding-top: 5.8125rem;
     margin-left: var(--margin-left);
 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: var(--primary-dark);
 
     text-align: left;
+
+    background: var(--primary-dark);
   }
 
   .content-container h1 {
@@ -159,10 +166,11 @@ input {
 
   .form-container {
     height: 3.5rem;
-    padding: 0 0.3125rem 0 1.875rem;
-    border-radius: 3.125rem;
     margin-right: 13rem;
     margin-top: 2.5rem;
+
+    padding: 0 0.3125rem 0 1.875rem;
+    border-radius: 3.125rem;
 
     display: flex;
     align-items: center;
@@ -201,10 +209,9 @@ input {
   }
 
   .pody {
-    max-width: 1440px;
-    max-height: 900px;
+    max-width: 90rem;
+    max-height: 56.25rem;
     margin: auto auto;
-    padding-bottom: var(--margin-top);
     padding-right: 34.5rem;
     background: url(assets/logo.svg) no-repeat var(--margin-left) 6.375rem,
       url(assets/bg-pattern-dots.svg) no-repeat right top 45rem,
@@ -214,22 +221,23 @@ input {
 
   .content-container {
     height: 32rem;
-    padding-top: 5.5rem;
     min-width: 41rem;
+    justify-content: space-between;
+
+    padding-top: 5.5rem;
   }
 
   .content-container h1 {
     font-size: 3.25rem;
     line-height: 3.875rem;
-    white-space: nowrap;
   }
 
   .main-content {
+    min-width: 27.8125rem;
+    margin: 1.5rem 51.875rem 0px 0;
+
     font-size: 1.125rem;
     line-height: 1.75rem;
-    min-width: 27.8125rem;
-
-    margin: 1.5rem 51.875rem 2.5rem 0;
   }
 
   input {
@@ -237,7 +245,7 @@ input {
   }
 
   .logo-container {
-    margin: 2.8125rem 11.6875rem 0 0;
     height: 1.8125rem;
+    margin: 0 100px 0 0;
   }
 }
