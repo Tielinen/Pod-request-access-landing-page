@@ -18,14 +18,19 @@
 
 body {
   font-family: 'Chivo', sans-serif;
-  height: 100vh;
+  background-color: var(--primary-dark);
+}
+
+.pody {
+  min-height: 100vh;
   background: url(assets/logo.svg) no-repeat top 3.875rem center,
     linear-gradient(rgba(18, 23, 37, 0.9), rgba(18, 23, 37, 0.9)),
     url(assets/mobile-image-host.jpg) no-repeat top right / cover;
 }
 
 .content-container {
-  margin: 10.9375rem 1.5625rem 0 1.5625rem;
+  margin: 0 1.5625rem 0 1.5625rem;
+  padding-top: 10.9375rem;
   text-align: center;
 }
 
@@ -43,7 +48,7 @@ h1 span {
 }
 
 .main-content {
-  margin-top: 16px;
+  margin-top: 1rem;
 
   font-size: 0.9375rem;
   line-height: 1.55rem;
@@ -61,7 +66,7 @@ h1 span {
   justify-content: space-between;
 }
 
-h2 {
+.logo-container h2 {
   position: absolute;
   visibility: hidden;
 }
@@ -108,7 +113,7 @@ input {
 
 .error-container {
   margin-top: 1rem;
-  min-height: 19px;
+  min-height: 1.1875rem;
   color: var(--error-red);
 }
 
@@ -120,8 +125,9 @@ input {
   :root {
     --margin-left: 2.4375rem;
   }
-  body {
-    height: 100vh;
+  .pody {
+    padding-top: 16.125rem;
+    padding-right: 5.875rem;
     background: url(assets/logo.svg) no-repeat var(--margin-left) 4rem,
       url(assets/bg-pattern-dots.svg) no-repeat bottom left var(--margin-left),
       url(assets/tablet-image-host.jpg) no-repeat top right, var(--primary-dark);
@@ -129,10 +135,13 @@ input {
 
   .content-container {
     padding-top: 5.8125rem;
-    margin: 16.125rem 5.875rem 0px var(--margin-left);
+    min-width: 39.6875rem;
+    height: 31.8125rem;
+    margin-left: var(--margin-left);
 
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     background: var(--primary-dark);
 
     text-align: left;
@@ -144,17 +153,16 @@ input {
   }
 
   .main-content {
-    min-height: 5.25rem;
-    margin: 1.9375rem 11.875rem 2.5rem 0;
-
+    margin-right: 10.9rem;
     font-size: 1.125rem;
   }
 
   .form-container {
     height: 3.5rem;
-    margin-right: 13rem;
     padding: 0 0.3125rem 0 1.875rem;
     border-radius: 3.125rem;
+    margin-right: 13rem;
+    margin-top: 2.5rem;
 
     display: flex;
     align-items: center;
@@ -169,10 +177,6 @@ input {
     padding: 0;
   }
 
-  input {
-    min-width: 14.375rem;
-  }
-
   .js-button {
     flex: 1 0 10.125rem;
   }
@@ -180,9 +184,8 @@ input {
   .logo-container {
     order: 1;
     height: 1.8125rem;
-
-    margin-top: 2.3125rem;
-    margin-right: 6.25rem;
+    margin-right: 12.0625rem;
+    margin-bottom: 0;
   }
 
   .error-container {
@@ -197,27 +200,28 @@ input {
     --margin-top: 8.125rem;
   }
 
-  html {
-    max-width: 90rem;
+  .pody {
+    max-width: 1440px;
+    max-height: 900px;
     margin: auto auto;
-    max-height: 56.25rem;
-  }
-
-  body {
+    padding-bottom: var(--margin-top);
+    padding-right: 34.5rem;
     background: url(assets/logo.svg) no-repeat var(--margin-left) 6.375rem,
-      url(assets/bg-pattern-dots.svg) no-repeat right bottom 5.3125rem,
+      url(assets/bg-pattern-dots.svg) no-repeat right top 45rem,
       url(assets/desktop-image-host.jpg) no-repeat right var(--margin-top),
       var(--primary-dark);
   }
 
   .content-container {
-    margin: 16.3125rem 34.5rem var(--margin-top) var(--margin-left);
+    height: 32rem;
     padding-top: 5.5rem;
+    min-width: 41rem;
   }
 
   .content-container h1 {
     font-size: 3.25rem;
     line-height: 3.875rem;
+    white-space: nowrap;
   }
 
   .main-content {

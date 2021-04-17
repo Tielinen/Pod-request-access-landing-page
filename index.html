@@ -21,43 +21,51 @@
     <title>Frontend Mentor | Pod request access landing page</title>
   </head>
   <body>
-    <div class="content-container">
-      <h1>Publish your podcasts <span>everywhere.</span></h1>
-      <p class="main-content">
-        Upload your audio to Pod with a single click. We’ll then distribute your
-        podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and
-        more!
-      </p>
-      <div class="logo-container">
-        <h2 class="">works with major providers</h2>
+    <div class="pody">
+      <div class="content-container">
+        <h1>Publish your podcasts <span>everywhere.</span></h1>
+        <p class="main-content">
+          Upload your audio to Pod with a single click. We’ll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </p>
+        <div class="logo-container">
+          <h2>Works with major providers</h2>
 
-        <img id="spotify-logo" src="assets/spotify.svg" alt="Spotify Logo" />
-        <img id="apple-logo" src="assets/apple-podcast.svg" alt="Apple logo" />
-        <img
-          id="google-logo"
-          src="assets/google-podcasts.svg"
-          alt="Google logo"
-        />
-        <img
-          class="pocket-logo"
-          src="assets/pocket-casts.svg"
-          alt="pocket-casts logo"
-        />
-      </div>
-      <form>
-        <div class="form-container">
-          <input
-            type="email"
-            class="js-email"
-            placeholder="Email address"
-            aria-label="email"
+          <img id="spotify-logo" src="assets/spotify.svg" alt="Spotify Logo" />
+          <img
+            id="apple-logo"
+            src="assets/apple-podcast.svg"
+            alt="Apple logo"
           />
-          <button class="js-button">Request access</button>
+          <img
+            id="google-logo"
+            src="assets/google-podcasts.svg"
+            alt="Google logo"
+          />
+          <img
+            class="pocket-logo"
+            src="assets/pocket-casts.svg"
+            alt="pocket-casts logo"
+          />
         </div>
-        <div class="error-container">
-          <p class="js-hidden js-error-message">Oops! Please add your email</p>
-        </div>
-      </form>
+        <form>
+          <div class="form-container">
+            <input
+              type="email"
+              class="js-email"
+              placeholder="Email address"
+              aria-label="email"
+            />
+            <button class="js-button">Request access</button>
+          </div>
+          <div class="error-container">
+            <p class="js-hidden js-error-message">
+              Oops! Please add your email
+            </p>
+          </div>
+        </form>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
