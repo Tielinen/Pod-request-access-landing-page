@@ -23,12 +23,14 @@
   <body>
     <div class="content-container">
       <h1>Publish your podcasts <span>everywhere.</span></h1>
-      <p id="main-content">
+      <p class="main-content">
         Upload your audio to Pod with a single click. We’ll then distribute your
         podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and
         more!
       </p>
       <div class="logo-container">
+        <h2 class="">works with major providers</h2>
+
         <img id="spotify-logo" src="assets/spotify.svg" alt="Spotify Logo" />
         <img id="apple-logo" src="assets/apple-podcast.svg" alt="Apple logo" />
         <img
@@ -37,20 +39,24 @@
           alt="Google logo"
         />
         <img
-          id="pocket-logo"
+          class="pocket-logo"
           src="assets/pocket-casts.svg"
           alt="pocket-casts logo"
         />
       </div>
-      <form class="form-container">
-        <input
-          type="email"
-          id="email"
-          placeholder="Email address"
-          aria-label="email"
-        />
-        <button>Request access</button>
-        <p id="error-message" class="">Oops! Please add your email</p>
+      <form>
+        <div class="form-container">
+          <input
+            type="email"
+            class="js-email"
+            placeholder="Email address"
+            aria-label="email"
+          />
+          <button class="js-button">Request access</button>
+        </div>
+        <div class="error-container">
+          <p class="js-hidden js-error-message">Oops! Please add your email</p>
+        </div>
       </form>
     </div>
     <script src="script.js"></script>

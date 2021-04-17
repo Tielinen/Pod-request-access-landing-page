@@ -42,7 +42,7 @@ h1 span {
   display: block;
 }
 
-#main-content {
+.main-content {
   margin-top: 16px;
 
   font-size: 0.9375rem;
@@ -61,6 +61,11 @@ h1 span {
   justify-content: space-between;
 }
 
+h2 {
+  position: absolute;
+  visibility: hidden;
+}
+
 img {
   filter: brightness(0) saturate(100%) invert(42%) sepia(4%) saturate(4194%)
     hue-rotate(188deg) brightness(90%) contrast(83%);
@@ -70,7 +75,7 @@ img {
   */
 }
 input,
-button {
+.js-button {
   border: none;
   display: block;
   width: 100%;
@@ -87,7 +92,7 @@ input {
   color: var(--primary-light);
 }
 
-button {
+.js-button {
   margin: 1rem 0;
 
   padding: 0.875rem 0;
@@ -97,17 +102,18 @@ button {
   text-align: center;
 }
 
-button:hover {
+.js-button:hover {
   background-color: #b3ffe2;
 }
 
-#error-message {
+.error-container {
   margin-top: 1rem;
+  min-height: 19px;
   color: var(--error-red);
 }
 
-.hidden {
-  visibility: hidden;
+.js-hidden {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -137,7 +143,7 @@ button:hover {
     line-height: 3.5rem;
   }
 
-  #main-content {
+  .main-content {
     min-height: 5.25rem;
     margin: 1.9375rem 11.875rem 2.5rem 0;
 
@@ -156,7 +162,7 @@ button:hover {
     background-color: var(--primary-gray);
   }
 
-  button,
+  .js-button,
   input {
     height: 2.875rem;
     margin: 0;
@@ -167,7 +173,7 @@ button:hover {
     min-width: 14.375rem;
   }
 
-  button {
+  .js-button {
     flex: 1 0 10.125rem;
   }
 
@@ -179,7 +185,7 @@ button:hover {
     margin-right: 6.25rem;
   }
 
-  #error-message {
+  .error-container {
     margin-top: 0.5rem;
     margin-left: 2rem;
   }
@@ -214,7 +220,7 @@ button:hover {
     line-height: 3.875rem;
   }
 
-  #main-content {
+  .main-content {
     font-size: 1.125rem;
     line-height: 1.75rem;
     min-width: 27.8125rem;

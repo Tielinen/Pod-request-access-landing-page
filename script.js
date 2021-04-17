@@ -1,8 +1,9 @@
 'use strict';
 
-const buttonElement = document.querySelector('button');
-const messageElement = document.getElementById('error-message');
-const emailElement = document.getElementById('email');
+const buttonElement = document.querySelector('.js-button');
+const messageElement = document.querySelector('.js-error-message');
+const emailElement = document.querySelector('.js-email');
+
 
 buttonElement.addEventListener('click', processInput);
 
@@ -12,7 +13,8 @@ emailElement.addEventListener('keypress', function(event) {
 });
 
 
-function processInput() {
+function processInput(event) {
+  if (event) event.preventDefault();
   const userInput = emailElement.value;
   if (userInput === '') {
     messageElement.innerText = 'Oops! Please add your email';
@@ -31,14 +33,13 @@ function validateEmail(email) {
 }
 
 function showErrorElement() {
-  messageElement.classList.remove('hidden');
+  messageElement.classList.remove('js-hidden');
 }
 
 function hideErrorElement() {
-  messageElement.classList.add('hidden');
+  messageElement.classList.add('js-hidden');
 }
 
 function clearInputElement() {
   emailElement.value='';
 }
-
