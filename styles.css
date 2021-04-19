@@ -21,7 +21,7 @@ body {
   background-color: var(--primary-dark);
 }
 
-.pody {
+.background-container {
   min-height: 100vh;
   background: url(assets/logo.svg) no-repeat top 3.875rem center,
     linear-gradient(rgba(18, 23, 37, 0.9), rgba(18, 23, 37, 0.9)),
@@ -133,7 +133,7 @@ input:focus {
   :root {
     --margin-left: 2.4375rem;
   }
-  .pody {
+  .background-container {
     padding-top: 16.125rem;
     padding-right: 5.875rem;
     background: url(assets/logo.svg) no-repeat var(--margin-left) 4rem,
@@ -212,7 +212,7 @@ input:focus {
     --margin-top: 8.125rem;
   }
 
-  .pody {
+  .background-container {
     max-width: 90rem;
     max-height: 56.25rem;
     margin: auto auto;
